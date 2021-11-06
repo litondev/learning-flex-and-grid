@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <div class="container">
+            <div>Box1</div>
+            <div>Box2</div>
+            <div>Box3</div>
+        </div>
+
+        <style>
+            .container{
+                display: flex;      
+                /*
+                    Align-Items => hanya untuk sumbu Y atau vertical
+
+                    align-items : flex-start;
+                    align-items : fles-center;
+                    align-items : flex-end;
+
+                    align-items : stretch; -> akan auto height
+                    align-items : baseline; -> akan bertumbu pada kontent
+                    
+                */         
+                align-items: center;                               
+                padding: 10px;
+                height: 100vh;
+                background-color: blue;
+            }
+
+            .container div {
+                background: red;
+                height : 100px;
+                width : 100px;
+                border:1px solid white; 
+            }
+        </style>
+    </body>
+</html>

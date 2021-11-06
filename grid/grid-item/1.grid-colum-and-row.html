@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <div class="container">
+            <div class="item1">Box1</div>
+            <div>Box2</div>
+            <div>Box3</div>
+            <div>Box4</div>
+            <div>Box5</div>
+
+            <div>Box6</div>
+            <div>Box7</div>
+            <div>Box8</div>
+            <div>Box9</div>
+            <div>Box10</div>
+
+            <div>Box11</div>
+            <div>Box12</div>
+            <div>Box13</div>
+            <div>Box14</div>
+            <div>Box15</div>
+        </div>
+
+        <style>
+            .container{
+                display: grid;
+                grid-template-columns: auto auto auto auto auto auto;
+                grid-gap: 10px;
+                padding: 10px;
+                background-color: blue;
+            }
+
+            .container div {
+                background: red;
+                height : 100px;
+                width : 100%;
+                border:1px solid white; 
+            }
+
+            .item1 {
+                /*
+                    grid-column: 1 / span 5; => mulai dari column 1 - dan sebelum colum 5
+                    grid-column: 1 / 5; mulai dari column 1 - column 5
+                */
+                grid-column: 2 / span 5;
+                /* grid-row: 1 / span 2; */
+            }
+        </style>
+    </body>
+</html>

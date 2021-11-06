@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <div class="container">
+            <div>Box1</div>
+            <div>Box2</div>
+            <div>Box3</div>
+        </div>
+
+        <style>
+            .container{
+                display: grid;
+                /*
+                    grid-template-columns akan membuat kolom dengan urutan dan ukuran yang ditentukan
+                    grid-template-rows akan membuat baris dengan urutan dan ukuran yang ditentukan
+                */
+                grid-template-columns: auto auto 20px auto;
+                grid-template-rows: 100px 200px;
+                padding: 10px;
+                background-color: blue;
+            }
+
+            .container div {
+                background: red;
+                height : 100px;
+                width : 100px;
+                border:1px solid white; 
+            }
+        </style>
+    </body>
+</html>

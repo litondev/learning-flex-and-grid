@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <div class="container">
+            <div>Box1</div>
+            <div>Box2</div>
+            <div>Box3</div>
+        </div>
+
+        <style>
+            .container{
+                display: flex;      
+                /*
+                    Justify-Content => hanya untuk sumbu X atau horizontal
+
+                    justify-content : flex-start;
+                    justify-content : fles-center;
+                    justify-content : flex-end;
+
+                    justify-content : space-around
+                    justify-content : space-between
+                */         
+                justify-content: center;                               
+                padding: 10px;
+                height: 100vh;
+                background-color: blue;
+            }
+
+            .container div {
+                background: red;
+                height : 100px;
+                width : 100px;
+                border:1px solid white; 
+            }
+        </style>
+    </body>
+</html>

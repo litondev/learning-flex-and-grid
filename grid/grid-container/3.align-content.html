@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <div class="container">
+            <div>Box1</div>
+            <div>Box2</div>
+            <div>Box3</div>
+
+            <div>Box4</div>
+            <div>Box5</div>
+            <div>Box6</div>
+        </div>
+
+        <style>
+            .container{
+                display: grid;              
+                grid-template-columns: auto auto auto;        
+                /* 
+                    align-content => bekerja secara vertical
+                    
+                    align-content: space-around; 
+                    align-content: space-between;
+                    align-content: center;
+                    align-content: start
+                    align-content: end
+                */
+                align-content: space-evenly;
+                padding: 10px;
+                background-color: blue;
+            }
+
+            .container div {
+                background: red;
+                height : 100px;
+                width : 100px;
+                border:1px solid white; 
+            }
+        </style>
+    </body>
+</html>

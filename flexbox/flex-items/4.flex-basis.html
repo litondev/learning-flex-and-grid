@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <div class="container">
+            <div>Box1</div>
+            <div>Box2</div>
+            <div>Box3</div>
+            <div>Box4</div>
+            <div>Box5</div>
+            <!-- Default is 1 -->        
+            <div style="flex-basis: 200px">Box6</div>
+            <div>Box7</div>
+        </div>
+
+        <style>
+            .container{
+                display: flex;                       
+                padding: 10px;
+                height: 100vh;            
+                background-color: blue;
+            }
+
+            .container div {
+                background: red;
+                height : 100px;
+                width : 100px;
+                border:1px solid white; 
+            }
+        </style>
+    </body>
+</html>
